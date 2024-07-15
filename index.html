@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <link rel="stylesheet" href="/styles/styles.css"> <!-- Inclui o arquivo de estilos externo -->
+</head>
+<body>
+    <header>
+        <h1>Portfolio Pessoal</h1>
+    </header>
+    <nav>
+        <ul>
+            <!-- Links de navegação para diferentes seções do site -->
+            <li><a href="#" onclick="showContent('content1')">Sobre Mim</a></li>
+            <li><a href="#" onclick="showContent('content2')">Formacao</a></li>
+            <li><a href="#" onclick="showContent('content3')">Portfolio</a></li>
+            <li><a href="#" onclick="showContent('contact')">Contato</a></li>
+        </ul>
+    </nav>
+    <main id="main-content">
+        <!-- Conteúdo da seção "Sobre Mim" -->
+        <div id="content1" class="content-section" style="display: none;">
+            <h2>Sobre Mim</h2>
+            <p>Sou apaixonado por programação e videogames. Desde cedo, descobri o fascínio de criar linhas de código que ganham vida e transformam ideias em realidade digital. Programar não é apenas meu trabalho, mas minha paixão que me desafia a aprender constantemente e a resolver problemas complexos de maneiras criativas.
+
+                Nos momentos de lazer, mergulho nos universos dos videogames. Cada jogo é uma jornada emocionante, onde posso explorar novos mundos, enfrentar desafios épicos e até mesmo relaxar em histórias envolventes. Os videogames não são apenas diversão, mas uma fonte de inspiração que me motiva a pensar fora da caixa e aprimorar minhas habilidades tanto na programação quanto no jogo.</p>
+        </div>
+        <!-- Outras seções de conteúdo (ocultas inicialmente) -->
+        <div id="content2" class="content-section" style="display: none;">
+            <h2>Formacao</h2>
+            <p>Conteúdo da Seção 2.</p>
+        </div>
+        <div id="content3" class="content-section" style="display: none;">
+            <h2>Portfolio</h2>
+            <p> Em Construção: Meu novo site de portfólio está em desenvolvimento! Em breve, estarei compartilhando aqui meu trabalho em programação, projetos de jogos e muito mais. Fique ligado para ver o que estou preparando para vocês!</p>
+        </div>
+        <!-- Seção de contato (oculta inicialmente) -->
+        <div id="contact" class="content-section" style="display: none;">
+            <h2>Contato</h2>
+            <form id="contact-form">
+                <!-- Campos do formulário de contato -->
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <!-- Botão de envio do formulário -->
+                <button type="submit">Enviar</button>
+                <!-- Mensagem de sucesso (oculta inicialmente) -->
+                <p id="success-message" style="display:none; color: green;">Sua mensagem foi enviada com sucesso!</p>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 - Vicente Rodrigues Vieira Neto - RU 4521569</p>
+    </footer>
+    <!-- Inclui o arquivo de script JavaScript externo -->
+    <script src="/scripts/scripts.js"></script>
+</body>
+</html>
